@@ -28,19 +28,21 @@ void AStarWindow::resetTiles() {
             tiles[x].push_back(new Tile(x, y, this));
         }
     }
+    getStart()->setStart();
+    getFinish()->setFinish();
 }
 
 void AStarWindow::distributeObsticles(int distributionPercent) {
     srand(time(nullptr));
     for (int x = 0; x < gridSize; x++) {
         for (int y = 0; y < gridSize; y++) {
-            if (rand() % 100 <= distributionPercent) {
+            if (rand() % 100 < distributionPercent) {
                 tiles[x][y]->setObsticle();
             }
         }
     }
-    getStart()->unsetObsticle();
-    getFinish()->unsetObsticle();
+    getStart()->setStart();
+    getFinish()->setFinish();
 }
 
 Tile* AStarWindow::getTile(int x, int y) {
@@ -50,6 +52,20 @@ Tile* AStarWindow::getTile(int x, int y) {
     } else {
         return tiles[x][y];
     }
+}
+
+void AStarWindow::updateTiles() {
+    for (int x = 0; x < gridSize; x++) {
+        for (int y = 0; y < gridSize; y++) {
+            tiles[x][y]->update();
+        }
+    }
+}
+
+void AStarWindow::resizeEvent(Event event) {
+    int lowerDimension = ((event.size.width > event.size.height) ? event.size.height : event.size.width);
+    scale = (lowerDimension - gridSize * borderWidth) / gridSize;
+    updateTiles();
 }
 
 int AStarWindow::getScale() {

@@ -37,7 +37,11 @@ private:
     int scale;
     int borderWidth;
     
+    void updateTiles();
+    
     vector<vector<Tile*>> tiles;
+    
+    virtual void resizeEvent(Event event);
 };
 
 #endif /* AStarWindow_hpp */

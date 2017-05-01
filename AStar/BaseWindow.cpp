@@ -10,9 +10,9 @@
 
 BaseWindow::BaseWindow(int x, int y, string title, bool isResizable) {
     if (isResizable) {
-        this->renderWindow = new RenderWindow(VideoMode(x, y), "Xtreme Chess!!!");
+        this->renderWindow = new RenderWindow(VideoMode(x, y), title);
     } else {
-        this->renderWindow = new RenderWindow(VideoMode(x, y), "Xtreme Chess!!!", Style::Close);
+        this->renderWindow = new RenderWindow(VideoMode(x, y), title, Style::Close);
     }
     
     this->renderWindow->setVerticalSyncEnabled(true);

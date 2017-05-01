@@ -14,20 +14,20 @@ Tile::Tile(int x, int y, AStarWindow* window) {
     this->y = y;
     this->window = window;
     
+    background = new RectangleShape();
+    window->addDrawable(background);
+    
+    unsetObsticle();
+    update();
+}
+
+void Tile::update() {
     int tileSize = window->getScale();
     int xPosition = (x * window->getScale()) + (window->getBorderWidth() * x);
     int yPosition = (y * window->getScale()) + (window->getBorderWidth() * y);
     
-    background = new RectangleShape();
     background->setSize(Vector2f(tileSize, tileSize));
     background->setPosition(Vector2f(xPosition, yPosition));
-    window->addDrawable(background);
-    
-    unsetObsticle();
-}
-
-void Tile::update() {
-    
 }
 
 void Tile::setObsticle() {
@@ -38,6 +38,16 @@ void Tile::setObsticle() {
 void Tile::unsetObsticle() {
     obsticle = false;
     background->setFillColor(Color(255,255,255));
+}
+
+void Tile::setStart() {
+    obsticle = false;
+    background->setFillColor(Color(0,255,0));
+}
+
+void Tile::setFinish() {
+    obsticle = false;
+    background->setFillColor(Color(255,0,0));
 }
 
 bool Tile::isObsticle() {

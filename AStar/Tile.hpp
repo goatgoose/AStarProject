@@ -21,8 +21,12 @@ public:
     Tile(int x, int y, AStarWindow* window);
     
     void update();
+    
     void setObsticle();
     void unsetObsticle();
+    void setStart();
+    void setFinish();
+    
     bool isObsticle();
     
     Tile* getRelativeTile(int relativeX, int relativeY);

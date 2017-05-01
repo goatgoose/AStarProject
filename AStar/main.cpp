@@ -24,7 +24,7 @@
 
 int main(int, char const**)
 {
-    AStarWindow* window = new AStarWindow(100, 10, 2);
+    AStarWindow* window = new AStarWindow(100, 15, 2);
     window->distributeObsticles(10);
     window->launch();
 
