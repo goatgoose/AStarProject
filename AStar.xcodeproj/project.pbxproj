@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25C159CC1EB55D3A00567007 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 25C159CB1EB55D3A00567007 /* ResourcePath.mm */; };
+		25C159CF1EB55D3A00567007 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25C159CE1EB55D3A00567007 /* main.cpp */; };
+		25C159E61EB5642500567007 /* BaseWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25C159E41EB5642500567007 /* BaseWindow.cpp */; };
+		25C159E91EB564C400567007 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25C159E71EB564C400567007 /* Timer.cpp */; };
+		25C159EC1EB564E800567007 /* Clickable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25C159EA1EB564E800567007 /* Clickable.cpp */; };
+		25C159EF1EB56A3700567007 /* AStarWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25C159ED1EB56A3700567007 /* AStarWindow.cpp */; };
+		25C159F21EB56C2B00567007 /* Tile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25C159F01EB56C2B00567007 /* Tile.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		25C159C61EB55D3A00567007 /* AStar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AStar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25C159CA1EB55D3A00567007 /* AStar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AStar-Info.plist"; sourceTree = "<group>"; };
+		25C159CB1EB55D3A00567007 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
+		25C159CD1EB55D3A00567007 /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
+		25C159CE1EB55D3A00567007 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		25C159E41EB5642500567007 /* BaseWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseWindow.cpp; sourceTree = "<group>"; };
+		25C159E51EB5642500567007 /* BaseWindow.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BaseWindow.hpp; sourceTree = "<group>"; };
+		25C159E71EB564C400567007 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		25C159E81EB564C400567007 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
+		25C159EA1EB564E800567007 /* Clickable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Clickable.cpp; sourceTree = "<group>"; };
+		25C159EB1EB564E800567007 /* Clickable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Clickable.hpp; sourceTree = "<group>"; };
+		25C159ED1EB56A3700567007 /* AStarWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AStarWindow.cpp; sourceTree = "<group>"; };
+		25C159EE1EB56A3700567007 /* AStarWindow.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AStarWindow.hpp; sourceTree = "<group>"; };
+		25C159F01EB56C2B00567007 /* Tile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tile.cpp; sourceTree = "<group>"; };
+		25C159F11EB56C2B00567007 /* Tile.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Tile.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25C159C21EB55D3A00567007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25C159BC1EB55D3A00567007 = {
+			isa = PBXGroup;
+			children = (
+				25C159C81EB55D3A00567007 /* AStar */,
+				25C159C71EB55D3A00567007 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		25C159C71EB55D3A00567007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25C159C61EB55D3A00567007 /* AStar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25C159C81EB55D3A00567007 /* AStar */ = {
+			isa = PBXGroup;
+			children = (
+				25C159CB1EB55D3A00567007 /* ResourcePath.mm */,
+				25C159CD1EB55D3A00567007 /* ResourcePath.hpp */,
+				25C159CE1EB55D3A00567007 /* main.cpp */,
+				25C159E41EB5642500567007 /* BaseWindow.cpp */,
+				25C159E51EB5642500567007 /* BaseWindow.hpp */,
+				25C159ED1EB56A3700567007 /* AStarWindow.cpp */,
+				25C159EE1EB56A3700567007 /* AStarWindow.hpp */,
+				25C159F01EB56C2B00567007 /* Tile.cpp */,
+				25C159F11EB56C2B00567007 /* Tile.hpp */,
+				25C159EA1EB564E800567007 /* Clickable.cpp */,
+				25C159EB1EB564E800567007 /* Clickable.hpp */,
+				25C159E71EB564C400567007 /* Timer.cpp */,
+				25C159E81EB564C400567007 /* Timer.hpp */,
+				25C159D01EB55D3A00567007 /* Resources */,
+				25C159C91EB55D3A00567007 /* Supporting Files */,
+			);
+			path = AStar;
+			sourceTree = "<group>";
+		};
+		25C159C91EB55D3A00567007 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				25C159CA1EB55D3A00567007 /* AStar-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		25C159D01EB55D3A00567007 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25C159C51EB55D3A00567007 /* AStar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25C159DB1EB55D3A00567007 /* Build configuration list for PBXNativeTarget "AStar" */;
+			buildPhases = (
+				25C159C11EB55D3A00567007 /* Sources */,
+				25C159C21EB55D3A00567007 /* Frameworks */,
+				25C159C31EB55D3A00567007 /* Resources */,
+				25C159C41EB55D3A00567007 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AStar;
+			productName = AStar;
+			productReference = 25C159C61EB55D3A00567007 /* AStar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25C159BD1EB55D3A00567007 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				TargetAttributes = {
+					25C159C51EB55D3A00567007 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 25C159C01EB55D3A00567007 /* Build configuration list for PBXProject "AStar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 25C159BC1EB55D3A00567007;
+			productRefGroup = 25C159C71EB55D3A00567007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25C159C51EB55D3A00567007 /* AStar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25C159C31EB55D3A00567007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25C159C41EB55D3A00567007 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This shell script simply copies required SFML dylibs/frameworks into the application bundle frameworks folder.\n# If you're using static libraries (which is not recommended) you should remove this script from your project.\n\n# SETTINGS\nCMAKE_INSTALL_FRAMEWORK_PREFIX=\"/Library/Frameworks\"\nCMAKE_INSTALL_LIB_PREFIX=\"/usr/local/lib\"\nFRAMEWORKS_FULL_PATH=\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/\"\n\n# Are we building a project that uses frameworks or dylibs?\ncase \"$SFML_BINARY_TYPE\" in\n    DYLIBS)\n        frameworks=\"false\"\n        ;;\n    *)\n        frameworks=\"true\"\n        ;;\nesac\n\n# Echoes to stderr\nerror () # $* message to display\n{\n    echo $* 1>&2\n    exit 2\n}\n\nassert () # $1 is a boolean, $2...N is an error message\n{\n    if [ $# -lt 2 ]\n    then\n        error \"Internal error in assert: not enough args\"\n    fi\n\n    if [ $1 -ne 0 ]\n    then\n        shift\n        error \"$*\"\n    fi\n}\n\nforce_remove () # $@ is some paths\n{\n    test $# -ge 1\n    assert $? \"force_remove() requires at least one parameter\"\n    rm -fr $@\n    assert $? \"couldn't remove $@\"\n}\n\ncopy () # $1 is a source, $2 is a destination\n{\n    test $# -eq 2\n    assert $? \"copy() requires two parameters\"\n    ditto \"$1\" \"$2\"\n    assert $? \"couldn't copy $1 to $2\"\n}\n\nrequire () # $1 is a SFML module like 'system' or 'audio'\n{\n    dest=\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/\"\n\n    if [ -z \"$1\" ]\n    then\n        error \"require() requires one parameter!\"\n    else\n        # clean potentially old stuff\n        force_remove \"$dest/libsfml-$1\"*\n        force_remove \"$dest/sfml-$1.framework\"\n\n        # copy SFML libraries\n        if [ \"$frameworks\" = \"true\" ]\n        then\n            source=\"$CMAKE_INSTALL_FRAMEWORK_PREFIX/sfml-$1.framework\"\n            target=\"sfml-$1.framework\"\n        elif [ \"$SFML_LINK_DYLIBS_SUFFIX\" = \"-d\" ]\n        then\n            source=\"$CMAKE_INSTALL_LIB_PREFIX/libsfml-$1-d.dylib\"\n            target=\"`readlink $source`\"\n        else\n            source=\"$CMAKE_INSTALL_LIB_PREFIX/libsfml-$1.dylib\"\n            target=\"`readlink $source`\"\n        fi\n\n        copy \"$source\" \"$dest/$target\"\n\n        # copy extra dependencies\n        if [ \"$1\" = \"audio\" ]\n        then\n            # copy \"FLAC\" \"ogg\" \"vorbis\" \"vorbisenc\" \"vorbisfile\" \"OpenAL\" frameworks too\n            for f in \"FLAC\" \"ogg\" \"vorbis\" \"vorbisenc\" \"vorbisfile\" \"OpenAL\"\n            do\n                copy \"$CMAKE_INSTALL_FRAMEWORK_PREFIX/$f.framework\" \"$dest/$f.framework\"\n            done\n        elif [ \"$1\" = \"graphics\" ]\n        then\n            copy \"$CMAKE_INSTALL_FRAMEWORK_PREFIX/freetype.framework\" \"$dest/freetype.framework\"\n        fi\n    fi\n}\n\nif [ -n \"$SFML_SYSTEM\" ]\nthen\n    require \"system\"\nfi\n\nif [ -n \"$SFML_AUDIO\" ]\nthen\n    require \"audio\"\nfi\n\nif [ -n \"$SFML_NETWORK\" ]\nthen\n    require \"network\"\nfi\n\nif [ -n \"$SFML_WINDOW\" ]\nthen\n    require \"window\"\nfi\n\nif [ -n \"$SFML_GRAPHICS\" ]\nthen\n    require \"graphics\"\nfi\n\n                ";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25C159C11EB55D3A00567007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25C159E61EB5642500567007 /* BaseWindow.cpp in Sources */,
+				25C159CF1EB55D3A00567007 /* main.cpp in Sources */,
+				25C159CC1EB55D3A00567007 /* ResourcePath.mm in Sources */,
+				25C159EC1EB564E800567007 /* Clickable.cpp in Sources */,
+				25C159E91EB564C400567007 /* Timer.cpp in Sources */,
+				25C159EF1EB56A3700567007 /* AStarWindow.cpp in Sources */,
+				25C159F21EB56C2B00567007 /* Tile.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		25C159D91EB55D3A00567007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Debug;
+		};
+		25C159DA1EB55D3A00567007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Release;
+		};
+		25C159DC1EB55D3A00567007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "AStar/AStar-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		25C159DD1EB55D3A00567007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "AStar/AStar-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25C159C01EB55D3A00567007 /* Build configuration list for PBXProject "AStar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25C159D91EB55D3A00567007 /* Debug */,
+				25C159DA1EB55D3A00567007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25C159DB1EB55D3A00567007 /* Build configuration list for PBXNativeTarget "AStar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25C159DC1EB55D3A00567007 /* Debug */,
+				25C159DD1EB55D3A00567007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 25C159BD1EB55D3A00567007 /* Project object */;
+}
