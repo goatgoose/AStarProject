@@ -15,7 +15,6 @@ AStarWindow::AStarWindow(int gridSize, int scale, int borderWidth): BaseWindow((
     this->borderWidth = borderWidth;
     
     background->setFillColor(Color(0,0,0));
-    
     resetTiles();
 }
 

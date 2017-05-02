@@ -12,6 +12,7 @@
 #include "AStarWindow.hpp"
 #include "OpenSetQueue.hpp"
 #include <unordered_map>
+#include "Timer.hpp"
 
 class AStar {
 public:

@@ -16,6 +16,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "Astar.hpp"
 
 class AStarWindow: public BaseWindow {
 public:

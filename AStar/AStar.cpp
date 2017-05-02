@@ -13,25 +13,31 @@ void AStar::search(Tile* start, Tile* finish, AStarWindow* window) {
     OpenSetQueue openSet = OpenSetQueue();
     openSet.push(new Node(start, 0, window->getDistance(start, finish), nullptr));
     
+    int count = 1;
     while (!openSet.isEmpty()) {
         Node* currentNode = openSet.pop();
-        cout << currentNode->tile->getX() << ", " << currentNode->tile->getY() << endl;
+        
+        window->addTimer(new Timer(count, [=] {
+            currentNode->tile->setStart();
+        }));
+        count++;
+        
+        cout << *currentNode->tile << endl;
         if (currentNode->tile == finish) {
             cout << "found" << endl;
+            break;
         }
         
         closedSet.insert(pair<Tile*, Node*>(currentNode->tile, currentNode));
         vector<Tile*> neighbors = currentNode->tile->getNeighbors();
         for (int i = 0; i < neighbors.size(); i++) {
             Tile* neighbor = neighbors[i];
-            cout << *neighbor << endl;
-            if (closedSet.find(neighbor) != closedSet.end()) {
+            if (closedSet.find(neighbor) == closedSet.end()) {
                 int tentativeGScore = currentNode->gScore + 1;
                 if (!openSet.contains(neighbor)) {
                     openSet.push(new Node(neighbor, tentativeGScore, tentativeGScore + window->getDistance(neighbor, finish), currentNode));
                 }
             }
         }
-        cout << openSet.peek()->tile->getX() << endl;
     }
 }

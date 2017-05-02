@@ -62,13 +62,19 @@ vector<Tile*> Tile::getNeighbors() {
     vector<Tile*> neighbors = vector<Tile*>();
     for (int rx = x - 1; rx <= x + 1; rx++) {
         for (int ry = y - 1; ry <= y + 1; ry++) {
-            if (!(rx == x && ry == y)) { // not itself
-                cout << rx << ":" << ry << endl;
-                Tile* tile = window->getTile(rx, ry);
-                if (tile != nullptr) {
-                    neighbors.push_back(tile);
-                }
+            if (rx == x && ry == y) { // is itself
+                continue;
             }
+            Tile* tile = window->getTile(rx, ry);
+            
+            if (tile == nullptr) { // tile out of bounds
+                continue;
+            }
+            if (tile->isObsticle()) {
+                continue;
+            }
+            cout << *tile << endl;
+            neighbors.push_back(tile);
         }
     }
     return neighbors;
