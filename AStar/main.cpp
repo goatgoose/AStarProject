@@ -20,13 +20,15 @@
 // Here is a small helper for you! Have a look.
 #include "ResourcePath.hpp"
 
-#include "AStarWindow.hpp"
+#include "AStar.hpp"
 
 int main(int, char const**)
 {
     AStarWindow* window = new AStarWindow(100, 15, 2);
     window->distributeObsticles(10);
+    AStar::search(window->getStart(), window->getFinish(), window);
     window->launch();
+    
 
     return EXIT_SUCCESS;
 }

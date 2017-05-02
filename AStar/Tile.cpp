@@ -58,6 +58,35 @@ Tile* Tile::getRelativeTile(int relativeX, int relativeY) {
     return window->getTile(x + relativeX, y + relativeY);
 }
 
+vector<Tile*> Tile::getNeighbors() {
+    vector<Tile*> neighbors = vector<Tile*>();
+    for (int rx = x - 1; rx <= x + 1; rx++) {
+        for (int ry = y - 1; ry <= y + 1; ry++) {
+            if (!(rx == x && ry == y)) { // not itself
+                cout << rx << ":" << ry << endl;
+                Tile* tile = window->getTile(rx, ry);
+                if (tile != nullptr) {
+                    neighbors.push_back(tile);
+                }
+            }
+        }
+    }
+    return neighbors;
+}
+
+int Tile::getX() {
+    return x;
+}
+
+int Tile::getY() {
+    return y;
+}
+
+ostream& operator<<(ostream& os, const Tile& tile) {
+    os << tile.x << ", " << tile.y;
+    return os;
+}
+
 
 
 

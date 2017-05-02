@@ -14,6 +14,7 @@
 
 class AStarWindow;
 
+using namespace std;
 using namespace sf;
 
 class Tile {
@@ -30,6 +31,12 @@ public:
     bool isObsticle();
     
     Tile* getRelativeTile(int relativeX, int relativeY);
+    vector<Tile*> getNeighbors();
+    
+    int getX();
+    int getY();
+    
+    friend ostream& operator<<(ostream& os, const Tile& tile);
 private:
     int x;
     int y;

@@ -25,6 +25,8 @@ public:
     void distributeObsticles(int distributionPercent);
     Tile* getTile(int x, int y);
     
+    int getDistance(Tile* tile1, Tile* tile2);
+    
     int getScale();
     int getGridSize();
     int getBorderWidth();

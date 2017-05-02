@@ -17,7 +17,6 @@ AStarWindow::AStarWindow(int gridSize, int scale, int borderWidth): BaseWindow((
     background->setFillColor(Color(0,0,0));
     
     resetTiles();
-    
 }
 
 void AStarWindow::resetTiles() {
@@ -46,12 +45,18 @@ void AStarWindow::distributeObsticles(int distributionPercent) {
 }
 
 Tile* AStarWindow::getTile(int x, int y) {
-    if (x < 0 || x > gridSize ||
-        y < 0 || y > gridSize) {
+    if (x < 0 || x > gridSize - 1 ||
+        y < 0 || y > gridSize - 1) {
         return nullptr;
     } else {
         return tiles[x][y];
     }
+}
+
+int AStarWindow::getDistance(Tile* tile1, Tile* tile2) {
+    int xRemainder = abs(tile1->getX() - tile2->getX());
+    int yRemainder = abs(tile1->getY() - tile2->getY());
+    return ((xRemainder > yRemainder) ? xRemainder : yRemainder);
 }
 
 void AStarWindow::updateTiles() {
