@@ -8,13 +8,13 @@
 
 #include "Timer.hpp"
 
-Timer::Timer(int seconds, function<void()> callback) {
+Timer::Timer(double ms, function<void()> callback) {
     // http://stackoverflow.com/questions/19555121/how-to-get-current-timestamp-in-milliseconds-since-1970-just-the-way-java-gets
-    this->endSeconds = (duration_cast<milliseconds>(system_clock::now().time_since_epoch()).count() / 1000) + seconds;
+    this->endMs = duration_cast<milliseconds>(system_clock::now().time_since_epoch()).count() + ms;
     this->callback = callback;
 }
 
 bool Timer::hasCompleted() {
-    int now = duration_cast<milliseconds>(system_clock::now().time_since_epoch()).count() / 1000;
-    return now >= endSeconds;
+    double now = duration_cast<milliseconds>(system_clock::now().time_since_epoch()).count();
+    return now >= endMs;
 }

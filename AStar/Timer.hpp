@@ -17,14 +17,14 @@ using namespace std::chrono;
 
 class Timer {
 public:
-    Timer(int seconds, function<void()> callback);
+    Timer(double ms, function<void()> callback);
     
     bool hasCompleted();
     
     function<void()> callback;
     
 private:
-    int endSeconds;
+    int endMs;
 };
 
 #endif /* Timer_hpp */

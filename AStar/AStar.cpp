@@ -13,11 +13,11 @@ void AStar::search(Tile* start, Tile* finish, AStarWindow* window) {
     OpenSetQueue openSet = OpenSetQueue();
     openSet.push(new Node(start, 0, window->getEuclideanDistance(start, finish), nullptr));
     
-    int count = 1;
+    double count = 1;
     while (!openSet.isEmpty()) {
         Node* currentNode = openSet.pop();
         
-        window->addTimer(new Timer(count, [=] {
+        window->addTimer(new Timer(count * 200, [=] {
             currentNode->tile->setStart();
         }));
         count++;

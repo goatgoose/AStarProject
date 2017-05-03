@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		25506F901EB7C56200FD20E6 /* AStar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25506F8E1EB7C56200FD20E6 /* AStar.cpp */; };
 		25506F931EB7F2E800FD20E6 /* OpenSetQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25506F911EB7F2E800FD20E6 /* OpenSetQueue.cpp */; };
+		256DB7F11EBA72A400D11A52 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 256DB7EF1EBA72A400D11A52 /* Timer.cpp */; };
+		256DB7F41EBA73E300D11A52 /* OutputTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 256DB7F21EBA73E300D11A52 /* OutputTimer.cpp */; };
 		25C159CC1EB55D3A00567007 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 25C159CB1EB55D3A00567007 /* ResourcePath.mm */; };
 		25C159CF1EB55D3A00567007 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25C159CE1EB55D3A00567007 /* main.cpp */; };
 		25C159E61EB5642500567007 /* BaseWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25C159E41EB5642500567007 /* BaseWindow.cpp */; };
-		25C159E91EB564C400567007 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25C159E71EB564C400567007 /* Timer.cpp */; };
 		25C159EC1EB564E800567007 /* Clickable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25C159EA1EB564E800567007 /* Clickable.cpp */; };
 		25C159EF1EB56A3700567007 /* AStarWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25C159ED1EB56A3700567007 /* AStarWindow.cpp */; };
 		25C159F21EB56C2B00567007 /* Tile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25C159F01EB56C2B00567007 /* Tile.cpp */; };
@@ -25,6 +26,10 @@
 		25506F911EB7F2E800FD20E6 /* OpenSetQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenSetQueue.cpp; sourceTree = "<group>"; };
 		25506F921EB7F2E800FD20E6 /* OpenSetQueue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OpenSetQueue.hpp; sourceTree = "<group>"; };
 		25506F951EB7F33100FD20E6 /* Node.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
+		256DB7EF1EBA72A400D11A52 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		256DB7F01EBA72A400D11A52 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
+		256DB7F21EBA73E300D11A52 /* OutputTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OutputTimer.cpp; sourceTree = "<group>"; };
+		256DB7F31EBA73E300D11A52 /* OutputTimer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OutputTimer.hpp; sourceTree = "<group>"; };
 		25C159C61EB55D3A00567007 /* AStar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AStar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25C159CA1EB55D3A00567007 /* AStar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AStar-Info.plist"; sourceTree = "<group>"; };
 		25C159CB1EB55D3A00567007 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -32,8 +37,6 @@
 		25C159CE1EB55D3A00567007 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		25C159E41EB5642500567007 /* BaseWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseWindow.cpp; sourceTree = "<group>"; };
 		25C159E51EB5642500567007 /* BaseWindow.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BaseWindow.hpp; sourceTree = "<group>"; };
-		25C159E71EB564C400567007 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
-		25C159E81EB564C400567007 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 		25C159EA1EB564E800567007 /* Clickable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Clickable.cpp; sourceTree = "<group>"; };
 		25C159EB1EB564E800567007 /* Clickable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Clickable.hpp; sourceTree = "<group>"; };
 		25C159ED1EB56A3700567007 /* AStarWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AStarWindow.cpp; sourceTree = "<group>"; };
@@ -75,6 +78,10 @@
 				25C159CB1EB55D3A00567007 /* ResourcePath.mm */,
 				25C159CD1EB55D3A00567007 /* ResourcePath.hpp */,
 				25C159CE1EB55D3A00567007 /* main.cpp */,
+				256DB7EF1EBA72A400D11A52 /* Timer.cpp */,
+				256DB7F01EBA72A400D11A52 /* Timer.hpp */,
+				256DB7F21EBA73E300D11A52 /* OutputTimer.cpp */,
+				256DB7F31EBA73E300D11A52 /* OutputTimer.hpp */,
 				25C159E41EB5642500567007 /* BaseWindow.cpp */,
 				25C159E51EB5642500567007 /* BaseWindow.hpp */,
 				25C159ED1EB56A3700567007 /* AStarWindow.cpp */,
@@ -83,8 +90,6 @@
 				25C159F11EB56C2B00567007 /* Tile.hpp */,
 				25C159EA1EB564E800567007 /* Clickable.cpp */,
 				25C159EB1EB564E800567007 /* Clickable.hpp */,
-				25C159E71EB564C400567007 /* Timer.cpp */,
-				25C159E81EB564C400567007 /* Timer.hpp */,
 				25506F8E1EB7C56200FD20E6 /* AStar.cpp */,
 				25506F8F1EB7C56200FD20E6 /* AStar.hpp */,
 				25506F891EB79DFE00FD20E6 /* Queue.hpp */,
@@ -195,13 +200,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				256DB7F41EBA73E300D11A52 /* OutputTimer.cpp in Sources */,
 				25C159E61EB5642500567007 /* BaseWindow.cpp in Sources */,
 				25C159CF1EB55D3A00567007 /* main.cpp in Sources */,
 				25C159CC1EB55D3A00567007 /* ResourcePath.mm in Sources */,
 				25C159EC1EB564E800567007 /* Clickable.cpp in Sources */,
-				25C159E91EB564C400567007 /* Timer.cpp in Sources */,
 				25506F901EB7C56200FD20E6 /* AStar.cpp in Sources */,
 				25C159EF1EB56A3700567007 /* AStarWindow.cpp in Sources */,
+				256DB7F11EBA72A400D11A52 /* Timer.cpp in Sources */,
 				25506F931EB7F2E800FD20E6 /* OpenSetQueue.cpp in Sources */,
 				25C159F21EB56C2B00567007 /* Tile.cpp in Sources */,
 			);
