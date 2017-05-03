@@ -58,6 +58,12 @@ int AStarWindow::getDistance(Tile* tile1, Tile* tile2) {
     return ((xRemainder > yRemainder) ? xRemainder : yRemainder);
 }
 
+double AStarWindow::getEuclideanDistance(Tile* tile1, Tile* tile2) {
+    double xRemainder = fabs(tile1->getX() - tile2->getX());
+    double yRemainder = fabs(tile1->getY() - tile2->getY());
+    return sqrt(pow(tile1->getX() - tile2->getX(), 2.0) + pow(tile1->getY() - tile2->getY(), 2));
+}
+
 void AStarWindow::updateTiles() {
     for (int x = 0; x < gridSize; x++) {
         for (int y = 0; y < gridSize; y++) {

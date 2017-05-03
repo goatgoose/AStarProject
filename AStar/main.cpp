@@ -24,8 +24,8 @@
 
 int main(int, char const**)
 {
-    AStarWindow* window = new AStarWindow(20, 30, 2);
-    window->distributeObsticles(10);
+    AStarWindow* window = new AStarWindow(20, 50, 2);
+    window->distributeObsticles(40);
     AStar::search(window->getStart(), window->getFinish(), window);
     window->launch();
     

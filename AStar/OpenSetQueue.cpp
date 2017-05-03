@@ -19,14 +19,22 @@ void OpenSetQueue::push(Node* node) {
         head = newNode;
         tail = head;
     } else {
-        InternalNode* current = head;
-        while (node->fScore > current->node->fScore && current->next != nullptr) {
-            current = current->next;
-        }
-        newNode->next = current->next;
-        current->next = newNode;
-        if (newNode->next == nullptr) {
-            tail = newNode;
+        if (node->fScore < head->node->fScore) {
+            newNode->next = head;
+            head = newNode;
+        } else {
+            InternalNode* current = head;
+            while (current->next != nullptr) {
+                if (node->fScore < current->next->node->fScore) {
+                    break;
+                }
+                current = current->next;
+            }
+            newNode->next = current->next;
+            current->next = newNode;
+            if (newNode->next == nullptr) {
+                tail = newNode;
+            }
         }
     }
 }
@@ -60,4 +68,13 @@ bool OpenSetQueue::contains(Tile* tile) {
         current = current->next;
     }
     return false;
+}
+
+ostream& operator<<(ostream& os, const OpenSetQueue& openSetQueue) {
+    OpenSetQueue::InternalNode* currentNode = openSetQueue.head;
+    while (currentNode != nullptr) {
+        os << *currentNode->node->tile << " - " << currentNode->node->fScore << endl;
+        currentNode = currentNode->next;
+    }
+    return os;
 }

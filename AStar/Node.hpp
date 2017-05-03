@@ -13,11 +13,11 @@
 
 struct Node {
     Tile* tile;
-    int gScore;
-    int fScore;
+    double gScore;
+    double fScore;
     Node* cameFrom;
     
-    Node(Tile* tile, int gScore, int fScore, Node* cameFrom) {
+    Node(Tile* tile, double gScore, double fScore, Node* cameFrom) {
         this->tile = tile;
         this->gScore = gScore;
         this->fScore = fScore;

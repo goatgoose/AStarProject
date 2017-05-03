@@ -17,6 +17,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include "Astar.hpp"
+#include <math.h>
 
 class AStarWindow: public BaseWindow {
 public:
@@ -27,6 +28,7 @@ public:
     Tile* getTile(int x, int y);
     
     int getDistance(Tile* tile1, Tile* tile2);
+    double getEuclideanDistance(Tile* tile1, Tile* tile2);
     
     int getScale();
     int getGridSize();

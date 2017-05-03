@@ -73,7 +73,6 @@ vector<Tile*> Tile::getNeighbors() {
             if (tile->isObsticle()) {
                 continue;
             }
-            cout << *tile << endl;
             neighbors.push_back(tile);
         }
     }

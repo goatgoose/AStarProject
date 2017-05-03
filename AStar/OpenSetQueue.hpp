@@ -20,6 +20,8 @@ public:
     bool isEmpty();
     bool contains(Tile* tile);
     
+    friend ostream& operator<<(ostream& os, const OpenSetQueue& openSetQueue);
+    
 private:
     struct InternalNode {
         Node* node;

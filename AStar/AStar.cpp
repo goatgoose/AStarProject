@@ -11,7 +11,7 @@
 void AStar::search(Tile* start, Tile* finish, AStarWindow* window) {
     unordered_map<Tile*, Node*> closedSet = unordered_map<Tile*, Node*>();
     OpenSetQueue openSet = OpenSetQueue();
-    openSet.push(new Node(start, 0, window->getDistance(start, finish), nullptr));
+    openSet.push(new Node(start, 0, window->getEuclideanDistance(start, finish), nullptr));
     
     int count = 1;
     while (!openSet.isEmpty()) {
@@ -22,7 +22,6 @@ void AStar::search(Tile* start, Tile* finish, AStarWindow* window) {
         }));
         count++;
         
-        cout << *currentNode->tile << endl;
         if (currentNode->tile == finish) {
             cout << "found" << endl;
             break;
@@ -35,9 +34,12 @@ void AStar::search(Tile* start, Tile* finish, AStarWindow* window) {
             if (closedSet.find(neighbor) == closedSet.end()) {
                 int tentativeGScore = currentNode->gScore + 1;
                 if (!openSet.contains(neighbor)) {
-                    openSet.push(new Node(neighbor, tentativeGScore, tentativeGScore + window->getDistance(neighbor, finish), currentNode));
+                    openSet.push(new Node(neighbor, tentativeGScore, tentativeGScore + window->getEuclideanDistance(neighbor, finish), currentNode));
                 }
             }
         }
+        
+        cout << "current queue: " << endl;
+        cout << openSet << endl;
     }
 }
