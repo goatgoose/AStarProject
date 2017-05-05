@@ -2,7 +2,7 @@
 //  AStar.cpp
 //  AStar
 //
-//  Created by Sam Clark on 5/1/17.
+//  Created by Craig Conway / Sam Clark on 5/1/17.
 //
 //
 
@@ -17,10 +17,7 @@ void AStar::search(Tile* start, Tile* finish, AStarWindow* window) {
     while (!openSet.isEmpty()) {
         Node* currentNode = openSet.pop();
         
-        window->addTimer(new Timer(count * 200, [=] {
-            currentNode->tile->setStart();
-        }));
-        count++;
+        currentNode->tile->setStart();
         
         if (currentNode->tile == finish) {
             cout << "found" << endl;
@@ -39,7 +36,7 @@ void AStar::search(Tile* start, Tile* finish, AStarWindow* window) {
             }
         }
         
-        cout << "current queue: " << endl;
-        cout << openSet << endl;
+        //cout << "current queue: " << endl;
+        //cout << openSet << endl;
     }
 }

@@ -19,14 +19,21 @@
 
 // Here is a small helper for you! Have a look.
 #include "ResourcePath.hpp"
-
 #include "AStar.hpp"
+#include "OutputTimer.hpp"
 
 int main(int, char const**)
 {
-    AStarWindow* window = new AStarWindow(20, 50, 2);
+    AStarWindow* window = new AStarWindow(100, 2, 1);
     window->distributeObsticles(40);
+    
+    OutputTimer timer = OutputTimer();
+    timer.start();
     AStar::search(window->getStart(), window->getFinish(), window);
+    timer.stop();
+    
+    cout << "time: " << timer.getTime() << endl;
+    
     window->launch();
     
 
